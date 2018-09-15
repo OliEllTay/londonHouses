@@ -53,4 +53,5 @@ use_github()
 ## Add Travis CI
 ```{r travis, eval=FALSE}
 use_travis()
+use_coverage(type = "codecov")
 ```

@@ -1,4 +1,5 @@
 [![Travis build status](https://travis-ci.org/OliEllTay/londonHouses.svg?branch=master)](https://travis-ci.org/OliEllTay/londonHouses)
+[![Coverage status](https://codecov.io/gh/OliEllTay/londonHouses/branch/master/graph/badge.svg)](https://codecov.io/github/OliEllTay/londonHouses?branch=master)
 # londonHouses
 
 The goal of londonHouses is to ...
