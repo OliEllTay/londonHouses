@@ -1,3 +1,4 @@
+[![Travis build status](https://travis-ci.org/OliEllTay/londonHouses.svg?branch=master)](https://travis-ci.org/OliEllTay/londonHouses)
 # londonHouses
 
 The goal of londonHouses is to ...

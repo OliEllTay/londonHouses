@@ -49,3 +49,7 @@ use_readme_md()
 ```{r create_github_repo, eval=FALSE}
 use_github()
 ```
+
+```{r}
+use_travis()
+```
