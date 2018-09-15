@@ -50,6 +50,10 @@ use_readme_md()
 use_github()
 ```
 
+<<<<<<< HEAD
 ```{r travis, eval=FALSE}
+=======
+```{r}
+>>>>>>> a4f584f91bea2bb51b9c161f4e795d8c510a6874
 use_travis()
 ```
