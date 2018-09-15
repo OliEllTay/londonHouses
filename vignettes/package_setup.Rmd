@@ -1,0 +1,46 @@
+---
+title: "Package Setup"
+author: "Oli"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Documentation about how this package was setup.
+
+## Create this vignette
+```{r create_vignette, eval=FALSE}
+library(devtools)
+use_vignette("package_setup")
+```
+
+## Add tests
+```{r add_testthat, eval=FALSE}
+library(usethis)
+use_testthat()
+```
+
+## Set the licence
+```{r mit_licence, eval=FASLE}
+use_mit_license("Oliver Elliott-Taysom")
+```
+
+## Add Roxygen documentation
+```{r roxygen, eval=FALSE}
+use_roxygen_md()
+```
+
+## Add Readme
+```{r readme, eval=FALSE}
+use_readme_md()
+```
