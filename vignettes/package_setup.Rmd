@@ -44,3 +44,8 @@ use_roxygen_md()
 ```{r readme, eval=FALSE}
 use_readme_md()
 ```
+
+## Add to Github
+```{r create_github_repo, eval=FALSE}
+use_github()
+```
