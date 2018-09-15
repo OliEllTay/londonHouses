@@ -31,7 +31,7 @@ use_testthat()
 ```
 
 ## Set the licence
-```{r mit_licence, eval=FASLE}
+```{r mit_licence, eval=FALSE}
 use_mit_license("Oliver Elliott-Taysom")
 ```
 
@@ -50,10 +50,7 @@ use_readme_md()
 use_github()
 ```
 
-<<<<<<< HEAD
+## Add Travis CI
 ```{r travis, eval=FALSE}
-=======
-```{r}
->>>>>>> a4f584f91bea2bb51b9c161f4e795d8c510a6874
 use_travis()
 ```
