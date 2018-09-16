@@ -21,4 +21,9 @@ URL: https://github.com/OliEllTay/londonHouses
 BugReports: https://github.com/OliEllTay/londonHouses/issues
 Imports: 
     here,
-    utils
+    utils,
+    readxl,
+    magrittr,
+    dplyr,
+    purrr,
+    tidyr
