@@ -25,7 +25,6 @@ download_data_file <- function(url){
   #' Fetch file and save in /data
   #'
   #' @param url URL of the file to be downloaded
-  #' @export
   save_file_name <- url_to_file_name(url)
   save_location <- here::here("data", save_file_name)
   utils::download.file(url, save_location)
