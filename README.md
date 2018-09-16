@@ -2,14 +2,14 @@
 [![Coverage status](https://codecov.io/gh/OliEllTay/londonHouses/branch/master/graph/badge.svg)](https://codecov.io/github/OliEllTay/londonHouses?branch=master)
 # londonHouses
 
-The goal of londonHouses is to ...
+The goal of londonHouses is to provide tools for gathering and analysing data about house prices in London.
 
 ## Installation
 
-You can install the released version of londonHouses from [CRAN](https://CRAN.R-project.org) with:
+This package is still in development. You can install the latest version from Github with:
 
 ``` r
-install.packages("londonHouses")
+devtools::install_github("OliEllTay/londonHouses")
 ```
 
 ## Example
