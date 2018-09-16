@@ -26,7 +26,11 @@ download_data_file <- function(url){
   #'
   #' @param url URL of the file to be downloaded
   save_file_name <- url_to_file_name(url)
-  save_location <- here::here("data", save_file_name)
+  if(!dir.exists(here::here("data-raw"))){
+    dir.create(here::here("data-raw"))
+  }
+  save_location <- here::here("data-raw", save_file_name)
   utils::download.file(url, save_location)
+  return(save_location)
 }
 
