@@ -55,3 +55,8 @@ use_github()
 use_travis()
 use_coverage(type = "codecov")
 ```
+
+## Add folder for raw data
+```{r raw_data, eval=FALSE}
+devtools::use_data_raw()
+```
