@@ -2,11 +2,11 @@
 tidy_sale_price_sheet <- function(sale_sheet, metric_name){
   sale_sheet %>%
     dplyr::filter(stats::complete.cases(sale_sheet)) %>%
-    dplyr::rename(code = Code,
-                  area = Area) %>%
+    dplyr::rename(code = .data$Code,
+                  area = .data$Area) %>%
     tidyr::gather(key = "report_date_string",
                   value = "value",
-                  -(code:area)) %>%
+                  -(.data$code:.data$area)) %>%
     dplyr::mutate(metric = metric_name)
 }
 
@@ -32,6 +32,6 @@ tidy_sale_price <- function(file_path){
 
   tidy_sheets %>%
     purrr::map_dfr(~ .x) %>%
-    dplyr::mutate(report_date = date_from_report_string(report_date_string))
+    dplyr::mutate(report_date = date_from_report_string(.data$report_date_string))
 }
 
