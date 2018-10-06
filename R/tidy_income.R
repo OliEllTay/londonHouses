@@ -27,8 +27,8 @@ year_part <- function(yr, income_sheet){
   yr_dates <- date_headers(income_sheet)
   yr_ind <- which(yr == yr_dates)
   yr_n_ind <- remove_na_and_name(income_sheet[[(3 * yr_ind)]], "Number of Individuals")
-  yr_mean <- remove_na_and_name(income_sheet[[(3 * yr_ind + 1)]], "Mean £")
-  yr_median <- remove_na_and_name(income_sheet[[(3 * yr_ind + 2)]], "Median £")
+  yr_mean <- remove_na_and_name(income_sheet[[(3 * yr_ind + 1)]], "Mean \u00a3")
+  yr_median <- remove_na_and_name(income_sheet[[(3 * yr_ind + 2)]], "Median \u00a3")
   dplyr::data_frame(
     code = get_codes(income_sheet),
     area = get_areas(income_sheet),
@@ -51,8 +51,8 @@ tidy_income <- function(income_sheet){
   tidyr::gather(year_parts,
                 key = "metric",
                 value = "value",
-                -(code:year)) %>%
-    dplyr::mutate(value = as.numeric(value))
+                -(.data$code:.data$year)) %>%
+    dplyr::mutate(value = as.numeric(.data$value))
 }
 
 
