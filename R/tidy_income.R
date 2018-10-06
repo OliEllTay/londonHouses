@@ -45,6 +45,7 @@ tidy_income <- function(income_sheet){
   #' Turn data.gov london income by borough sheet into a tidy data format
   #'
   #' @param income_sheet Total Income sheet from a london borough income data .xls file.
+  #' @importFrom dplyr %>%
   yrs <- date_headers(income_sheet)
   year_parts <- purrr::map_dfr(.x = yrs, .f = year_part, income_sheet = income_sheet)
   tidyr::gather(year_parts,
